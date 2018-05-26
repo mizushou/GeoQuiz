@@ -19,56 +19,71 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/true_button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/true_button" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/false_button"
+            <Button
+                android:id="@+id/true_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/true_button" />
+
+            <Button
+                android:id="@+id/false_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/false_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/false_button" />
+            android:orientation="horizontal">
+
+            <!--<Button-->
+            <!--android:id="@+id/previous_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableLeft="@drawable/arrow_left"-->
+            <!--android:drawablePadding="4dp"-->
+            <!--android:text="@string/previous_button" />-->
+            <ImageButton
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/arrow_left" />
+
+            <!--<Button-->
+            <!--android:id="@+id/next_button"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableRight="@drawable/arrow_right"-->
+            <!--android:drawablePadding="4dp"-->
+            <!--android:text="@string/next_button" />-->
+            <ImageButton
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/cheat_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <!--<Button-->
-        <!--android:id="@+id/previous_button"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:drawableLeft="@drawable/arrow_left"-->
-        <!--android:drawablePadding="4dp"-->
-        <!--android:text="@string/previous_button" />-->
-        <ImageButton
-            android:id="@+id/previous_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:src="@drawable/arrow_left" />
-
-        <!--<Button-->
-        <!--android:id="@+id/next_button"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:drawableRight="@drawable/arrow_right"-->
-        <!--android:drawablePadding="4dp"-->
-        <!--android:text="@string/next_button" />-->
-        <ImageButton
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|right"
-            android:src="@drawable/arrow_right" />
-
-    </LinearLayout>
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/cheat_button" />
 
     <!--</LinearLayout>-->
 </FrameLayout>
